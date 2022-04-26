@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function precompute(prefix, suffix)
+{
+    let prime=[];
+    for(let i=0;i<MAX;i++)
+    {
+        prime[i]=true;
+    }
+ 
+    for(let i=2; i*i < MAX; i++)
+    {
+        if (prime[i])
+        {
+            for(let j=i*i;j<MAX;j+=i)
+            {
+                prime[j]=false;
+            }
+        }
+    }
+ 
+   
+    </script>
+    
+</body>
+</html>
